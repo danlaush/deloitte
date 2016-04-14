@@ -19,6 +19,9 @@ body {
   padding: 0.2em 0;
 }
 
+img {
+  margin-bottom: 20px;
+}
 
 .container {
   max-width: 960px;
@@ -58,21 +61,51 @@ body {
 
 .breakout {
   padding: 90px 0;
+  margin: 90px 0;
   background: #fff;
+}
+
+.breakout h2 {
+  position: relative;
+  padding-bottom: 25px;
+  margin: 0 auto 30px;
+}
+
+.breakout h2:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 55px;
+  height: 1px;
+  background: #939393;
 }
 
 .layouts,
 .layouts h2.title {
-  padding: 65px 0;
+  margin: 0 auto 70px;
+}
+
+.caption {
+  margin-bottom: 15px;
+}
+
+.caption h4 {
+  border-top: 1px solid #fff;
+  padding: 15px 0;
+  margin: 0;
+}
+
+.caption p {
+  margin: 0;
 }
 
 .projects {
-  border-top: 1px solid #939393;
+  border-top: 1px solid #2e2e2e;
   padding: 65px 0;
 }
 
 .footer {
-  text-align: center;
   margin: 20px 0;
 }
 
@@ -82,15 +115,22 @@ body {
   .welcome {
     padding-top: 75px;
   }
+
+  .breakout h2 {
+    padding-top: 40px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
- }
+  .breakout h2 {
+    padding-top: 80px;
+  }
+}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
- }
+}
 
 // TODO: Carousel JS
 // TODO: Modal popups for images
