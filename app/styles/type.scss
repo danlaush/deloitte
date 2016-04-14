@@ -1,0 +1,144 @@
+// via https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/
+// TODO: Fix FOFT gracefully http://www.zachleat.com/web/foft/
+
+@font-face {
+  font-family: 'Avenir';
+  src:  url('../fonts/AvenirLTPRO-Roman.otf') format('truetype');
+  font-weight: 400;
+  font-variant: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src:  url('../fonts/AvenirLTPRO-Black.otf') format('truetype');
+  font-weight: 900;
+  font-variant: normal;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic);
+
+// Bootstrap variables
+
+$font-family-sans-serif:  Avenir, Helvetica, Arial, sans-serif;
+$headings-font-weight:    900;
+
+// Font styles responsive
+/* Extra small devices (phones, 767px and down) */
+.welcome h1,
+.layouts h2 {
+	font-size: 40px;
+	letter-spacing: 15px;
+}
+
+.welcome h2,
+.welcome h2 small {
+	color: #939393;
+	font-size: 10px;
+	letter-spacing: 2px;
+}
+
+.welcome p.lead {
+	margin: 0 20px;
+	text-align: center;
+}
+
+.blurb h2 {
+	font-size: 18px;
+}
+
+.blurb p {
+	font-size: 12px;
+	margin: 0 10px;
+	text-align: center;
+}
+
+.breakout h2 {
+	text-align: left;
+	letter-spacing: 6px;
+	font-size: 30px;
+}
+
+.breakout p {
+	font-size: 19px;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.welcome h1,
+	.layouts h2 {
+		font-size: 60px;
+	}
+
+	.welcome h2,
+	.welcome h2 small {
+		font-size: 12px;
+	}
+
+	.welcome p.lead {
+		margin: 0 40px;
+		font-size: 25px;
+	}
+
+	.blurb h2 {
+		font-size: 25px;
+	}
+
+	.blurb p {
+		font-size: 18px;
+		margin: 0 140px;
+	}
+
+	.breakout h2 {
+		font-size: 25px;
+		letter-spacing: 5px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+	.welcome h1,
+	.layouts h2 {
+		font-size: 80px;
+	}
+
+	.welcome h2,
+	.welcome h2 small {
+		font-size: 14px;
+	}
+
+	.welcome p.lead {
+		margin: 0 45px;
+	}
+
+	.blurb h2 {
+		font-size: 25px;
+	}
+
+	.blurb p {
+		font-size: 18px;
+		margin: 0 210px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
+
+// Other type settings
+
+h1, .h1,
+h2, .h2 {
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2 small {
+	font-family: 'Libre Baskerville';
+	font-style: italic;
+	text-transform: none;
+}
+
+h2,
+.blurb h2 {
+	letter-spacing: 5px;
+}
+	
