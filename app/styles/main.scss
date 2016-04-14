@@ -21,12 +21,48 @@ body {
   max-width: 960px;
 }
 
-// TODO: Header CSS
+.header {
+  margin: 20px 0;
+}
+
+.logo {
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: #2e2e2e;
+}
+
+.welcome {
+  padding: 75px 0;
+}
+
+.blurb {
+  padding: 50px 0;
+}
+
+.breakout {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.layouts,
+.layouts h2.title {
+  padding: 65px 0;
+}
+
+.projects {
+  border-top: 1px solid #939393;
+  padding: 65px 0;
+}
+
+.footer {
+  text-align: center;
+  margin: 20px 0;
+}
+
 // TODO: Carousel JS
-// TODO: section spacing
 // TODO: Welome section link styling
 // TODO: Modal popups for images
 // TODO: Breakout section styling
 // TODO: Image caption styling
 // TODO: More project styling
-// TODO: Footer styling

@@ -24,6 +24,10 @@ $headings-font-weight:    900;
 
 // Font styles responsive
 /* Extra small devices (phones, 767px and down) */
+.project-name {
+	float: right;	
+}
+
 .welcome h1,
 .layouts h2 {
 	font-size: 40px;
@@ -56,10 +60,17 @@ $headings-font-weight:    900;
 	text-align: left;
 	letter-spacing: 6px;
 	font-size: 30px;
+	color: #939393;
 }
 
 .breakout p {
 	font-size: 19px;
+
+}
+
+.footer {
+	font-weight: 900;
+	text-transform: uppercase;
 }
 
 /* Small devices (tablets, 768px and up) */
@@ -126,7 +137,10 @@ $headings-font-weight:    900;
 // Other type settings
 
 h1, .h1,
-h2, .h2 {
+h2, .h2,
+h3, .h3,
+h4, .h4
+h5, .h5 {
 	text-transform: uppercase;
 	text-align: center;
 }
