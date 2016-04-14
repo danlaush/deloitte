@@ -2,9 +2,12 @@
 @import "bootstrap-overwrite";
 
 
-// Removed the automated import to customize bootstrap
+// Removed the automated import in order to customize bootstrap
 // bower:scss
 // endbower
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
 
 body {
 }
@@ -19,6 +22,7 @@ body {
 
 .container {
   max-width: 960px;
+  padding: 0;
 }
 
 .header {
@@ -27,13 +31,25 @@ body {
 
 .logo {
   float: left;
-  width: 50px;
-  height: 50px;
   background: #2e2e2e;
+  padding: 16px 18px;
+}
+
+.project-name {
+  float: right; 
+  padding: 17px 0;
 }
 
 .welcome {
-  padding: 75px 0;
+  padding: 30px 0 75px 0;
+  text-align: center;
+}
+
+.welcome a.cta {
+  display: inline-block;
+  margin-top: 55px;
+  padding: 20px 50px;
+  border: 2px solid #fff;
 }
 
 .blurb {
@@ -60,8 +76,23 @@ body {
   margin: 20px 0;
 }
 
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+  .welcome {
+    padding-top: 75px;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+ }
+
 // TODO: Carousel JS
-// TODO: Welome section link styling
 // TODO: Modal popups for images
 // TODO: Breakout section styling
 // TODO: Image caption styling
