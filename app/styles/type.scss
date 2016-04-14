@@ -1,4 +1,9 @@
-// via https://www.smashingmagazine.com/2013/02/setting-weights-and-styles-at-font-face-declaration/
+// Type Stylesheet for Deloitte FED Test
+// See bootstrap-variables-overwrite.scss for some font variable settings
+
+//
+// Font definitions
+//
 // TODO: Fix FOFT gracefully http://www.zachleat.com/web/foft/
 
 @font-face {
@@ -17,12 +22,17 @@
 
 @import url(https://fonts.googleapis.com/css?family=Libre+Baskerville:400italic);
 
-// Bootstrap variables
+//
+// Bootstrap type variables overwrite
+//
 
 $font-family-sans-serif:  Avenir, Helvetica, Arial, sans-serif;
 $headings-font-weight:    900;
 
-// Font styles responsive
+//
+// Type styles responsive
+//
+
 /* Extra small devices (phones, 767px and down) */
 .header .logo.h4 {
 	color: #939393;
@@ -45,6 +55,12 @@ $headings-font-weight:    900;
 	letter-spacing: 2px;
 }
 
+.welcome h2 small {
+	font-family: 'Libre Baskerville';
+	font-style: italic;
+	text-transform: none;
+}
+
 .welcome p.lead {
 	margin: 0 20px;
 }
@@ -61,6 +77,11 @@ $headings-font-weight:    900;
 .welcome a.cta:focus {
 	text-decoration: none;
 	color: #fff;
+}
+
+h2,
+.blurb h2 {
+	letter-spacing: 5px;
 }
 
 .blurb h2 {
@@ -92,6 +113,19 @@ $headings-font-weight:    900;
 .caption h4 {
   font-size: 13px;
   letter-spacing: 2px;
+}
+
+.projects p.lead {
+	text-align: center;
+}
+
+.projects h4 {
+	letter-spacing: 3px;
+}
+
+.projects .project p {
+	font-size: 15px;
+	text-align: center;
 }
 
 .footer {
@@ -148,7 +182,9 @@ $headings-font-weight:    900;
 	}
 }
 
+//
 // Other type settings
+//
 
 h1, .h1,
 h2, .h2,
@@ -158,15 +194,3 @@ h5, .h5 {
 	text-transform: uppercase;
 	text-align: center;
 }
-
-h2 small {
-	font-family: 'Libre Baskerville';
-	font-style: italic;
-	text-transform: none;
-}
-
-h2,
-.blurb h2 {
-	letter-spacing: 5px;
-}
-	
