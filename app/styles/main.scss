@@ -44,10 +44,6 @@ img {
   padding: 17px 0;
 }
 
-.masthead .carousel {
-  height: 470px;
-}
-
 .welcome {
   padding: 30px 0 75px 0;
   text-align: center;
@@ -141,6 +137,56 @@ img {
 @media (min-width: 1200px) { 
 }
 
-// TODO: Carousel JS
+//
+// Modal styles
+//
+.modal-trigger {
+  cursor: pointer;
+  position: relative;
+
+  &:after {
+    content: '\002b';
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 6px 13px;
+    border: 2px solid #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+
+  &:hover:after, &:focus:after {
+    background: rgba(0, 0, 0, 0.5);
+  }
+}
+
+.modal-dialog {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.modal-content {
+  border-radius: 0;
+}
+
+.modal-header {
+  border: 0;
+}
+
+.modal-header .close {
+    padding: 6px 10px;
+    border: 2px solid #000;
+    opacity: 1;
+}
+
+.modal-body p {
+  margin: 0 auto 40px;
+  max-width: 80%;
+}
+
 // TODO: Modal popups for images
 // TODO: Breakout section styling

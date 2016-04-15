@@ -134,6 +134,27 @@ h2,
 	text-align: center;
 }
 
+.modal-trigger:after,
+.modal-header .close {
+    color: #fff;
+    font-family: 'Avenir', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.modal-header .close {
+	color: #000;
+}
+
+.modal-body p {
+	text-align: center;
+}
+
+.modal-title {
+	color: #000;
+	letter-spacing: 3px;
+}
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 	.welcome h1,
