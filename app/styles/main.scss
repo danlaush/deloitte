@@ -4,6 +4,7 @@
 
 // Removed the automated import in order to customize bootstrap
 // bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 // endbower
 
 /* Extra small devices (phones, less than 768px) */
@@ -41,6 +42,10 @@ img {
 .project-name {
   float: right; 
   padding: 17px 0;
+}
+
+.masthead .carousel {
+  height: 470px;
 }
 
 .welcome {
